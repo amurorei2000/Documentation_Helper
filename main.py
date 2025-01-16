@@ -9,15 +9,18 @@ with st.sidebar:
 
     # 기본 프로필 이미지 URL (예시)
     default_profile_img = (
-        "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y"
+        # "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y"
+        "https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-1/463744063_9332921913476096_7328666605000821833_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=cie4_GyAqeEQ7kNvgEb_eEX&_nc_zt=24&_nc_ht=scontent-ssn1-1.xx&_nc_gid=AGd4bL2diH3VtjgMtrGMom2&oh=00_AYAZZlSKm63kx-6XHa-l34DeHhqEdaqsSnC5qZTROQZMJw&oe=678EE630"
     )
 
     # 프로필 이미지
     st.image(default_profile_img, width=100)
 
-    # 사용자 정보 입력 필드
-    user_name = st.text_input("이름", placeholder="이름을 입력하세요")
-    user_email = st.text_input("이메일", placeholder="이메일을 입력하세요")
+    # 사용자 정보 표시
+    # user_name = st.text_input("이름", placeholder="이름을 입력하세요")
+    # user_email = st.text_input("이메일", placeholder="이메일을 입력하세요")
+    st.text("이름: 박원석")
+    st.text("이메일: amurorei2000@gmail.com")
 
     # 구분선
     st.divider()
